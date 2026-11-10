@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Place Control — Extensão do Chrome</title>
+<style>
+:root{--bg:#f5f6fa;--card:#fff;--tx:#1b2330;--mut:#5b6678;--ac:#ffe600;--bd:#e3e6ee}
+@media(prefers-color-scheme:dark){:root{--bg:#10141c;--card:#1a202b;--tx:#eef1f6;--mut:#9aa6b8;--bd:#2a3341}}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55}
+header{background:var(--ac);color:#1b2330;padding:28px 20px;text-align:center}header h1{margin:0 0 4px;font-size:1.7rem}header p{margin:0}
+main{max-width:760px;margin:0 auto;padding:22px 16px 60px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px;margin:16px 0}
+.btn{display:inline-block;background:#1b2330;color:#fff;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:10px}
+ol{padding-left:22px}li{margin:8px 0}code{background:var(--bg);padding:2px 6px;border-radius:6px;border:1px solid var(--bd)}
+.mut{color:var(--mut);font-size:.92rem}
+</style></head><body>
+<header><h1>Place Control</h1><p>Extensão do Chrome · Sacas, Places, Demanda × Ofertas</p></header>
+<main>
+<div class="card"><h2>1. Baixe a extensão</h2>
+<p><a id="dl" class="btn" href="#">Baixar Place Control (.zip)</a></p>
+<p class="mut">Gratuito. Funciona no Chrome ou Edge (versão 111 ou superior), em Windows, Mac e Linux.</p></div>
+<div class="card"><h2>2. Instale (1 minuto)</h2><ol>
+<li>Extraia o ZIP em uma pasta fixa (ex.: <code>C:\PlaceControl</code>) e <strong>não apague</strong> a pasta depois.</li>
+<li>No navegador, abra <code>chrome://extensions</code> (no Edge: <code>edge://extensions</code>).</li>
+<li>Ative o <strong>Modo do desenvolvedor</strong> (canto superior direito).</li>
+<li>Clique em <strong>Carregar sem compactação</strong> e escolha a pasta <code>place_control_ext</code>.</li>
+<li>Fixe o ícone do <strong>Place Control</strong> na barra e clique nele para abrir o painel.</li></ol></div>
+<div class="card"><h2>3. Use</h2><ol>
+<li>No painel, clique em <strong>Abrir Logistics</strong> e faça login normalmente nas guias abertas.</li>
+<li>Use Atualizar rotas, Separação e Ofertas. Mantenha as guias abertas.</li></ol></div>
+<div class="card"><h2>Segurança</h2>
+<p>Somente leitura. Cada pessoa usa o próprio login; nenhum dado é enviado a servidores externos e nenhuma senha ou cookie é lido pela extensão. Acesso restrito a <code>envios.adminml.com</code>.</p>
+<p class="mut">Atualizações: baixe a nova versão, substitua a pasta e clique em “Recarregar” em chrome://extensions.</p></div>
+</main>
+<script>
+(function(){var a=document.getElementById('dl'),h=location.hostname,m=/^(.+)\.github\.io$/.exec(h),r=location.pathname.split('/')[1];
+if(m&&r){a.href='https://github.com/'+m[1]+'/'+r+'/releases/latest/download/Place_Control_Extensao_Chrome.zip'}
+else{a.textContent='Edite o link de download no arquivo index.html'}})();
+</script></body></html>
